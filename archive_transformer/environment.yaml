@@ -1,0 +1,13 @@
+name: gps_bias
+channels:
+  - defaults
+dependencies:
+  - matplotlib
+  - numpy
+  - pandas
+  - pillow
+  - pip
+  - pytorch
+  - scikit-learn
+  - scipy
+  - yaml

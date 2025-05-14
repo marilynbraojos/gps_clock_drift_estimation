@@ -1,0 +1,22 @@
+data:
+  file_paths:
+    train: '/Users/marilyn/Library/Mobile Documents/com~apple~CloudDocs/Documents/doctorate/ssdl/gps_bias/src/data/train/train_small.mat'
+    validate: '/Users/marilyn/Library/Mobile Documents/com~apple~CloudDocs/Documents/doctorate/ssdl/gps_bias/src/data/validate/val_small.mat'
+    test: '/Users/marilyn/Library/Mobile Documents/com~apple~CloudDocs/Documents/doctorate/ssdl/gps_bias/src/data/test/test_small.mat'
+
+model:
+  batch_size: 32
+  epochs: 10
+  # d_model: 256
+  d_model: 8
+  input_dim: 240
+  output_dim: 240
+  num_heads: 8
+  num_layers: 2
+  d_ff: 20
+  dropout: 0.1
+
+training:
+  learning_rate: 0.001
+  optimizer: 'Adam'
+  save_model_path: './experiment_logs/models/model.pth'
